@@ -94,7 +94,7 @@ I initially place the agents as far apart as possible within the starting zone. 
 
 In order to speed up the Genetic Algorithm, I do not reevaluate the design parameter strings of parents from the previous generation. Instead I copy their cost function value into the next row of PI before evaluating their children, and the new, randomly generated strings.
 
-# Results and Discussion
+## Results and Discussion
 
 ![fig1](https://user-images.githubusercontent.com/52175303/109431802-30d55800-79bd-11eb-8718-c2942ee6023b.png)
 
@@ -110,4 +110,14 @@ The effects of inbreeding can be seen here as well. The performance components a
 
 There is a slight decrease in the average performance of all strings across all generations. This is expected because most randomly generated strings, and many children perform poorly. Only a small number of strings in each generation perform very well.
 
+![image](https://user-images.githubusercontent.com/52175303/109431959-dbe61180-79bd-11eb-9f34-e75432fb5429.png)
 
+The top 4 design parameter strings all have similar design parameters. No negative values are present because the random strings are initialized between 0 and 2, and all children have parameters between their parents' parameters. If any negative values were present the repulsive and attractive forces could be switched, and the relationship between distance and magnitude of force could be inverted. Design parameters 10, and 15 are the smallest, approaching 0. Respectively, these cause the members to feel a very strong attractive force from targets, and a strong repulsive force from other members. Many of the design parameters are around 1. These mostly include the w scalars in front of the exponentials in the attractive and repulsive forces. This could mean that these parameters are unimportant, and that the parameters in the exponentials have a greater effect on the simulation. For future testing we could try setting these at a constant value of 1, and only optimizing the other parameters.
+
+## Simulation
+
+![FinalSim](https://user-images.githubusercontent.com/52175303/109432105-78a8af00-79be-11eb-817c-88c19a57121e.gif)
+
+## Conclusion
+
+The simulation was successfully optimized using a Genetic Algorithm. The dynamics, and kinematic equations of 15 UAVs were used to simulate the movements of these drones. Each drone was affected by a repulsive, and an attractive force from each other member, target, and obstacle. These equations utilized 15 design parameters that were optimized by a Genetic Algorithm. Random strings of design parameters were created at the beginning, passed into the simulator, and the resulting success of the strings was evaluated. The strings were then ranked, and the top strings were mated with each other, resulting in child strings. The next generation was filled out with more randomly generated strings, and the process was repeated for 100 generations. The GA resulted in a final cost of 25.3333. Additional optimizations for T*, and prevention of inbreeding could significantly decrease the cost, and should be implemented in future work on this, and other projects.
