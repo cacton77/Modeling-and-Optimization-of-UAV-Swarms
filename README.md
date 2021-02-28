@@ -110,7 +110,7 @@ The effects of inbreeding can be seen here as well. The performance components a
 
 There is a slight decrease in the average performance of all strings across all generations. This is expected because most randomly generated strings, and many children perform poorly. Only a small number of strings in each generation perform very well.
 
-![image](https://user-images.githubusercontent.com/52175303/109431959-dbe61180-79bd-11eb-9f34-e75432fb5429.png)
+![image](https://user-images.githubusercontent.com/52175303/109432215-084e5d80-79bf-11eb-8a2d-51a27a695701.png)
 
 The top 4 design parameter strings all have similar design parameters. No negative values are present because the random strings are initialized between 0 and 2, and all children have parameters between their parents' parameters. If any negative values were present the repulsive and attractive forces could be switched, and the relationship between distance and magnitude of force could be inverted. Design parameters 10, and 15 are the smallest, approaching 0. Respectively, these cause the members to feel a very strong attractive force from targets, and a strong repulsive force from other members. Many of the design parameters are around 1. These mostly include the w scalars in front of the exponentials in the attractive and repulsive forces. This could mean that these parameters are unimportant, and that the parameters in the exponentials have a greater effect on the simulation. For future testing we could try setting these at a constant value of 1, and only optimizing the other parameters.
 
