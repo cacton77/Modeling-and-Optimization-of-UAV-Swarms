@@ -1,4 +1,4 @@
-# Modeling-and-Optimization-of-UAV-Swarms
+# Modeling and Optimization of UAV Swarms
 
 UAV swarms have numerous applications in our modern world.  They can facilitate mapping, observing,and overseeing large areas with ease. It is necessary for these agents to autonomously navigate potentially dangerous terrain and airspace in order to log information about areas. In this project we simulate the motion of a swarm of drones, and their interaction with obstacles, and targets.
 
