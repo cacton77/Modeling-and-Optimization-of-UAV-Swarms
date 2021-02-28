@@ -33,7 +33,9 @@ The magnitude, and direction of the interaction force between an agent, i, and a
 The w1 term scales the force of attraction the member experiences from the object, and the w2 term scales the force of repulsion the member experiences from the object.
 
 ![eq17](https://user-images.githubusercontent.com/52175303/109431717-cae8d080-79bc-11eb-8194-ce1fce7bfaad.png)
+
 The total interaction vector on each member is the weighted summation of the interaction force between a member and all targets, a member and all obstacles, and a member and all other members.
+
 ![eq17](https://user-images.githubusercontent.com/52175303/109431723-d1774800-79bc-11eb-9a43-549d58aea589.png)
 
 ![eq7](https://user-images.githubusercontent.com/52175303/109431468-aa6c4680-79bb-11eb-8e6b-77a6fc9204c1.png)
