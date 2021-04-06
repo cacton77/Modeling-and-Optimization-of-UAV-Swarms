@@ -4,7 +4,7 @@
 
 ## Introduction
 
-UAV swarms have numerous applications in our modern world. They can facilitate mapping, observing, and overseeing large areas with ease. It is necessary for these agents to autonomously navigate potentially dangerous terrain and airspace in order to log information about areas. In this project we simulate the motion of a swarm of drones, and their interaction with obstacles, and targets.
+UAV swarms have numerous applications in our modern world. They can facilitate mapping, observing, and overseeing large areas with ease. It is necessary for these agents to autonomously navigate potentially dangerous terrain and airspace in order to log information about areas. In this project, we simulate the motion of a swarm of drones, and their interaction with obstacles, and targets.
 
 The goal of this project is to optimize this simulation using a Genetic Algorithm to maximize the number of targets mapped, minimize the number of crashed drones, and minimize the amount of time used in the simulation. To do this, we will use 15 design parameters to determine the dynamics and kinematics of each drone, using Forward Euler time discretization to update drone positions.
 
